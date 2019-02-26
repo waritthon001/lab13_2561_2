@@ -1,2 +1,2 @@
-# NAME:
-# STUDENT ID:
+# NAME:นายวริทธิ์ธร  อุตตะมา
+# STUDENT ID:610610612

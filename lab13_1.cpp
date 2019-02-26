@@ -9,11 +9,29 @@ void swap(T d[],int x,int y){
     d[y] = temp;
 }
 
+
 template <typename T>
 void insertionSort(T d[],int N){
-	
-//Write your code here.
-
+	int i, x, y; 
+   	for (i = 1; i < N; i++) 
+   	{ 
+    	x = d[i]; 
+       y = i-1; 
+       for(int t = 0; t < i; t++) cout << d[t] << " ";
+       cout<<"["<<d[i]<<"]";
+       for(int t = i+1; t < N; t++) cout << d[t] << " ";
+       cout<<"=>";
+       while (y >= 0 && d[y] < x) 
+       { 
+       	   swap(d,y+1,y);
+		   y = y-1; 
+       }
+       d[y+1] =x; 
+	    for(int t = 0; t <= y; t++) cout << d[t] << " ";
+       cout<<"["<<d[y+1]<<"]";
+       for(int u = y+2; u < N; u++) cout << d[u] << " ";
+	    cout<<"\n";
+   	} 
 }
 
 int main(){
